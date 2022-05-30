@@ -11,7 +11,7 @@ router.get('/seed', (req, res) => {
     Collection.deleteMany({},  (error, allCollections) => {})
 
     Collection.create(collectionSeed, (error, data) => {
-        res.redirect('/')
+        res.redirect('/collection')
     })
 });
 
@@ -21,6 +21,18 @@ router.get('/', (req, res) => {
         res.render('index.ejs', {
             collections: allCollections
         })
+    })
+});
+
+// New
+router.get('/new', (req, res) => {
+    res.render('new.ejs')
+});
+
+// Create
+router.post('/', (req, res) => {
+    Collection.create(req.body, (error, createdCollection) => {
+        res.redirect('/collection')
     })
 });
 
