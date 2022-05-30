@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collarchive</title>
+</head>
+<body>
+    <header><h1>Edit <%= collection.name %></h1></header>
+    <form action="/collection/<%= index %>?_method=PUT" method="POST">
+        <input type="text" name="name" placeholder="name" value="<%= collection.name %>" />
+        <input type="text" name="description" placeholder="description" value="<%= collection.description %>"/><br />
+        <input type="text" name="img" placeholder="link to image" value="<%= collection.img %>"/>
+        <input type="text" name="platform" placeholder="platform" value="<%= collection.platform %>"/><br />
+        <input type="number" name="qty" placeholder="quantity" value="<%= collection.qty %>"/>
+        <input type="submit" value="Submit Changes" />
+    </form>
+</body>
+</html>

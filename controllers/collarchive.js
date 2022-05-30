@@ -46,5 +46,29 @@ router.get('/:id', (req, res) => {
     })
 });
 
+// Edit
+router.get('/:id/edit', (req, res) => {
+    Collection.findById(req.params.id, (err, foundCollection) => {
+        res.render('edit.ejs', {
+            collection: foundCollection,
+            index: req.params.id
+        })
+    })
+});
+
+// Update
+router.put('/:id', (req, res) => {
+    Collection.findByIdAndUpdate(
+        req.params.id,
+        req.body,
+        {
+            new: true,
+        },
+        (err, updatedCollection) => {
+            res.redirect(`/collection/${req.params.id}`)
+        }
+    )
+});
+
 // Exports
 module.exports = router;
