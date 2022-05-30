@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collarchive</title>
+</head>
+<body>
+    <a href="/collection/new">Add a New Product</a>
+</nav>
+<header><h1 id="indexTitle">COLLARCHIVE</h1></header>
+<ul id="index">
+    <% collections.forEach(collection => { %>
+    <li>
+        <a href="/collection/<%=collection._id; %>"> <img src="<%= collection.img %>" title="<%= collection.name %>"> </a>
+        <br/>
+        <%= collection.name %>
+    </li>
+    <% }) %>
+</ul>
+</body>
+</html>

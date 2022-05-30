@@ -4,6 +4,7 @@ const methodOverride = require("method-override");
 const app = express();
 require('dotenv').config();
 const { default: mongoose } = require("mongoose");
+const Collection = require('./models/collection.js');
 
 // Database Connection
 mongoose.connect(process.env.DATABASE_URL, {
@@ -23,6 +24,8 @@ db.on('disconnected', () => console.log('mongo disconnected'));
 app.use(express.static('style'));
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
+
+app.use('/collection', require('./controllers/collarchive.js'))
 
 // Listener
 const PORT = process.env.PORT;

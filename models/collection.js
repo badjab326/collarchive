@@ -8,6 +8,6 @@ const collectionSchema = new mongoose.Schema({
     qty: Number
 });
 
-const Collection = mongoose.model('Collection', productSchema);
+const Collection = mongoose.model('Collection', collectionSchema);
 
 module.exports = Collection;
