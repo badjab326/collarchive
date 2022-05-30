@@ -36,5 +36,15 @@ router.post('/', (req, res) => {
     })
 });
 
+// Show
+router.get('/:id', (req, res) => {
+    Collection.findById(req.params.id, (err, foundCollection) => {
+        res.render('show.ejs', {
+            collection: foundCollection,
+            index: req.params.id
+        })
+    })
+});
+
 // Exports
 module.exports = router;

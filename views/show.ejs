@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collarchive</title>
+</head>
+<body>
+    <nav>
+        <a href="/collection">Home</a>
+    </nav>
+    <header><h1 id="showTitle"><%=collection.name %></h1></header>
+    <img src="<%= collection.img %>" title="<%= collection.name %>">
+    <br />
+    <br />
+    <h2><%= collection.platform %></h2>
+    <p><%= collection.description %></p>
+    <p><%= collection.qty %> Owned</p>
+
+
+    <a href="/collection/<%= index %>/edit">Edit This Product</a> 
+    <br />
+    <form action="/store/<%= index %>?_method=DELETE" method="POST">
+        <input type="submit" value="DELETE" />
+      </form>
+</body>
+</html>
