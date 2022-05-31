@@ -46,6 +46,13 @@ router.get('/:id', (req, res) => {
     })
 });
 
+// Delete
+router.delete('/:id', (req, res) => {
+    Collection.findByIdAndDelete(req.params.id, (err, data) => {
+        res.redirect('/collection')
+    })
+});
+
 // Edit
 router.get('/:id/edit', (req, res) => {
     Collection.findById(req.params.id, (err, foundCollection) => {
