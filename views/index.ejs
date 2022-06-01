@@ -11,7 +11,9 @@
 <header><h1 id="indexTitle">COLLARCHIVE</h1></header>
 <p id="flavorText">The Collectors Archive</p>
 <nav>
-    <a href="/collection/new">Add New Item</a>
+    <form action="/collection/new">
+        <input type="submit" value="ADD NEW" />
+      </form>
 </nav>
 <ul id="index">
     <% collections.sort().forEach(collection => { %>
