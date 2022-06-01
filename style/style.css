@@ -1,0 +1,23 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@font-face {
+    font-family: 'Arcade Interlaced';
+    src: url('ARCADE_I.TTF');
+}
+
+body {
+    height: 100vh;
+    color: aquamarine;
+    background-color: black;
+    /* background-image: url(./background.png); */
+    background-position: center;
+    background-size: cover;
+}
+
+h1 {
+    font-family: 'Arcade Interlaced';
+    font-size: 100px;
+    /* text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #ad00e6, 0 0 50px #9200e6; */
+}
