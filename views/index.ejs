@@ -8,14 +8,15 @@
     <title>Collarchive</title>
 </head>
 <body>
+<header><h1 id="indexTitle">COLLARCHIVE</h1></header>
+<p id="flavorText">The Collectors Archive</p>
+<nav>
     <a href="/collection/new">Add New Item</a>
 </nav>
-<header><h1 id="indexTitle">COLLARCHIVE</h1></header>
-<p id="flavortext">The Collectors Archive</p>
 <ul id="index">
-    <% collections.forEach(collection => { %>
+    <% collections.sort().forEach(collection => { %>
     <li>
-        <a href="/collection/<%=collection._id; %>"> <img src="<%= collection.img %>" title="<%= collection.name %>"> </a>
+        <a href="/collection/<%=collection._id; %>"> <img class="indexImg" src="<%= collection.img %>" title="<%= collection.name %>"> </a>
         <br/>
         <%= collection.name %>
     </li>
