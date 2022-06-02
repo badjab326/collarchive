@@ -1,5 +1,4 @@
 <h1>COLLARCHIVE</h1>
-------------------------
 <br />
 
 <h2>What is it?</h2>
@@ -20,11 +19,10 @@ Node JS<br />
 
 <h2>Screenshots</h2>
 <br />
-<img src="/screenshots/home.png">
-<img src="/screenshots/show.png">
-<img src="/screenshots/edit.png">
+<img src="./screenshots/home.png">
+<img src="./screenshots/show.png">
+<img src="./screenshots/edit.png">
 <br />
-
 
 <h2>Getting Started</h2>
  <a href=""></a><br />
