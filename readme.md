@@ -9,25 +9,25 @@ Collarchive is a web based app that gives users the ability to digitally log a p
 
 <h2>Technologies Used</h2>
 <br />
-HTML
-CSS
-JavaScript
-Mongoose
-MongoDB
-Express
-Node JS
+HTML<br />
+CSS<br />
+JavaScript<br />
+Mongoose<br />
+MongoDB<br />
+Express<br />
+Node JS<br />
 <br />
 
 <h2>Screenshots</h2>
 <br />
-<img src="./screenshots/home.png">
-<img src="./screenshots/show.png">
-<img src="./screenshots/edit.png">
+<img src="/screenshots/home.png">
+<img src="/screenshots/show.png">
+<img src="/screenshots/edit.png">
 <br />
 
 
 <h2>Getting Started</h2>
- <a href="">
+ <a href=""></a><br />
 Check out the app and try adding some games to the collection!
 <br />
 
