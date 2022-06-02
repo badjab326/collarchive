@@ -49,12 +49,40 @@ nav {
     justify-items: center;
 }
 
-li {
-    padding: 10;
-    margin: 10;
-}
-
 .indexImg {
     max-width: 500px;
     max-height: 200px;
+}
+
+#showTitle {
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+}
+
+#showImg {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+#showMain {
+    text-align: center;
+}
+
+#platform {
+    text-align: center;
+    font-size: 40px;
+}
+
+#info {
+    text-align: center;
+}
+
+#qty {
+    text-align: center;
+    font-weight: bolder;
+}
+
+#delete {
+    text-align: end;
 }

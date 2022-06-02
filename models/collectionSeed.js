@@ -16,5 +16,23 @@ module.exports = [{
     img: 'https://www.retroplace.com/pics/genesis/packshots/35959--battletoads-double-dragon.png',
     platform: 'Sega Genesis',
     qty: 1
+  }, {
+    name: 'Grand Theft Auto: Vice City',
+    description: "Grand Theft Auto: Vice City is a 2002 action-adventure game developed by Rockstar North and published by Rockstar Games.",
+    img: 'https://m.media-amazon.com/images/I/6142CATEDWL._SY445_.jpg',
+    platform: 'Playstation 2',
+    qty: 1
+  }, {
+    name: 'Battletoads and Double Dragon',
+    description: "a crossover of both Technos Japan's Double Dragon and Rare's own Battletoads game franchises",
+    img: 'https://www.retroplace.com/pics/genesis/packshots/35959--battletoads-double-dragon.png',
+    platform: 'Sega Genesis',
+    qty: 1
+  }, {
+    name: 'Battletoads and Double Dragon',
+    description: "a crossover of both Technos Japan's Double Dragon and Rare's own Battletoads game franchises",
+    img: 'https://www.retroplace.com/pics/genesis/packshots/35959--battletoads-double-dragon.png',
+    platform: 'Sega Genesis',
+    qty: 1
   }
 ]
