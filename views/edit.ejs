@@ -8,14 +8,34 @@
     <title>Collarchive</title>
 </head>
 <body>
-    <header><h1>Edit <%= collection.name %></h1></header>
+    <header><h1 id="formTitle">Edit <%= collection.name %></h1></header>
+    <nav>
+        <form class="navBar" action="/collection">
+            <input class="navi" type="submit" value="HOME" />
+          </form>
+          <form class="navBar" action="/collection/<%= collection.id %>">
+            <input class="navi" type="submit" value="BACK" />
+          </form>
+    </nav>
+    <div class="formContainer">
     <form action="/collection/<%= index %>?_method=PUT" method="POST">
-        <input type="text" name="name" placeholder="name" value="<%= collection.name %>" />
-        <input type="text" name="description" placeholder="description" value="<%= collection.description %>"/><br />
+        <label for="name">TITLE:</label>
+        <input type="text" name="name" placeholder="title" value="<%= collection.name %>" />
+        <br />
+        <label for="img">IMAGE LINK:</label>
         <input type="text" name="img" placeholder="link to image" value="<%= collection.img %>"/>
-        <input type="text" name="platform" placeholder="platform" value="<%= collection.platform %>"/><br />
+        <br />
+        <label for="platform">PLATFORM:</label>
+        <input type="text" name="platform" placeholder="platform" value="<%= collection.platform %>"/>
+        <br />
+        <label for="qty">QUANTITY OWNED:</label>
         <input type="number" name="qty" placeholder="quantity" value="<%= collection.qty %>"/>
-        <input type="submit" value="Submit Changes" />
+        <br />
+        <label for="description">DESCRIPTION:</label>
+        <textarea name="description" id="description" cols="30" rows="10"><%= collection.description %></textarea>
+        <br />
+        <input class="navi" type="submit" value="Submit Changes" />
     </form>
+</div>
 </body>
 </html>

@@ -10,17 +10,16 @@
 <body>
     <header><h1 id="showTitle"><%=collection.name %></h1></header>
     <nav>
-        <!-- <a href="/collection">Home</a> -->
-        <form action="/collection">
-            <input type="submit" value="HOME" />
+        <form class="navBar" action="/collection">
+            <input class="navi" type="submit" value="HOME" />
           </form>
-        <form action="/collection/<%= index %>/edit">
-            <input type="submit" value="EDIT" />
+        <form class="navBar" action="/collection/<%= index %>/edit">
+            <input class="navi" type="submit" value="EDIT" />
           </form>
     </nav>
     <br />
     <div id="showMain">
-        <img id="showImg" src="<%= collection.img %>" title="<%= collection.name %>">
+        <a href="<%= collection.img %>"><img id="showImg" src="<%= collection.img %>" title="<%= collection.name %>"></a>
     </div>
         <h2 id="platform"><%= collection.platform %></h2>
     <div id="infoDiv">
