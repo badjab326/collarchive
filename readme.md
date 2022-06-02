@@ -25,7 +25,7 @@ Node JS<br />
 <br />
 
 <h2>Getting Started</h2>
- <a href=""></a><br />
+<a href="https://collarchive.herokuapp.com/collection">Try out Collarchive for yourself!</a><br />
 Check out the app and try adding some games to the collection!
 <br />
 
