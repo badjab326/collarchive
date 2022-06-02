@@ -10,10 +10,13 @@
 body {
     height: 100vh;
     color: aquamarine;
-    background-color: black;
-    /* background-image: url(./background.png); */
+    /* background-color: black; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                       rgba(0, 0, 0, 0.5)), url(citybg2.png);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 #indexTitle {
@@ -66,6 +69,12 @@ nav {
 .indexImg {
     max-width: 500px;
     max-height: 200px;
+}
+
+.indexImg:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+    transition: 0.5s ease-in-out;
 }
 
 #showTitle {
@@ -159,7 +168,11 @@ input[type="submit"] {
 #formTitle {
     display: flex;
     justify-content: center;
-    font-size: 60px;
+    text-align: center;
+    font-size: 3.3vw;
+    font-family: 'Arcade Interlaced';
+    font-weight: lighter;
+    max-width: 100%;
 }
 
 .formContainer {
