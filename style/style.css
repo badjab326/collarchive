@@ -40,13 +40,14 @@ nav {
 
 #index {
     list-style-type: none;
-    padding: 15;
-    margin: 15;
+    padding: 100;
+    margin: 100;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     justify-items: center;
+    max-width: 1920px;
 }
 
 .indexImg {
@@ -74,8 +75,19 @@ nav {
     font-size: 40px;
 }
 
+#infoDiv {
+    display: flex;
+    justify-content: center;
+}
+
 #info {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
     text-align: center;
+    width: 500px;
 }
 
 #qty {
@@ -85,4 +97,9 @@ nav {
 
 #delete {
     text-align: end;
+}
+
+#deleteBtn {
+    color: white;
+    background-color: red;
 }
