@@ -25,7 +25,12 @@ app.use(express.static('style'));
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
 
-app.use('/collection', require('./controllers/collarchive.js'))
+app.use('/collection', require('./controllers/collarchive.js'));
+
+// Landing Page
+app.get('/', (req, res) => {
+        res.render('main.ejs')
+    });
 
 // Listener
 const PORT = process.env.PORT;

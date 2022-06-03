@@ -56,8 +56,8 @@ nav {
 
 #index {
     list-style-type: none;
-    padding: 100;
-    margin: 100;
+    padding: 10px 30px 10px 30px;
+    margin: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -241,3 +241,19 @@ textarea:focus {
     outline: 0;
     border: 1px solid hotpink;
   }
+
+#enterBtn {
+    text-align: center;
+}
+
+.mainBtn {
+    background-image: radial-gradient(100% 100% at 100% 0, pink 0, hotpink 100%);
+    font-size: 50vw;
+}
+
+.mainBtn:hover {
+    cursor: pointer;
+    background: orangered;
+    box-shadow: 2px 2px;
+    transition: 0.5s ease-in-out;
+}
