@@ -19,9 +19,9 @@ Node JS<br />
 
 <h2>Screenshots</h2>
 <br />
-<img src="./screenshots/home.png">
-<img src="./screenshots/show.png">
-<img src="./screenshots/edit.png">
+<img src="./screenshots/Home.png">
+<img src="./screenshots/Show.png">
+<img src="./screenshots/Edit.png">
 <br />
 
 <h2>Getting Started</h2>
