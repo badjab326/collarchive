@@ -67,8 +67,9 @@ nav {
 }
 
 .indexImg {
-    max-width: 500px;
-    max-height: 200px;
+    max-width: 30vw;
+    max-height: 30vh;
+    padding: 2px;
 }
 
 .indexImg:hover {
@@ -81,15 +82,15 @@ nav {
     display: flex;
     justify-content: center;
     text-align: center;
-    font-size: 3.3vw;
+    font-size: 3.3vh;
     font-family: 'Arcade Interlaced';
     font-weight: lighter;
     max-width: 100%;
 }
 
 #showImg {
-    max-width: 30vw;
-    max-height: 30vw;
+    max-width: 70vw;
+    max-height: 40vh;
 }
 
 #showMain {
@@ -98,7 +99,7 @@ nav {
 
 #platform {
     text-align: center;
-    font-size: 40px;
+    font-size: 3vh;
 }
 
 #infoDiv {
@@ -113,12 +114,14 @@ nav {
     align-items: center;
     align-content: center;
     text-align: center;
-    width: 50vw;
+    width: 75vw;
+    font-size: 2vh;
 }
 
 #qty {
     text-align: center;
     font-weight: bolder;
+    font-size: 2vh;
 }
 
 #delete {
@@ -156,13 +159,13 @@ input[type="submit"] {
     align-items: center;
     appearance: none;
     display: inline-flex;
-    height: 35px;
     justify-content: center;
     line-height: 1;
     padding-left: 18px;
     padding-right: 18px;
     position: relative;
-    font-size: 16px;
+    font-size: 2vh;
+    height: 4vh;
 }
 
 #formTitle {
@@ -177,7 +180,6 @@ input[type="submit"] {
 
 .formContainer {
     width: 40vw;
-    height: 40vw;
     margin: 0 auto;
     display: flex;
     border-radius: 10px;
@@ -197,7 +199,7 @@ label {
   }
 
 input[type="text"] {
-    width: 300%;
+    width: 35vw;
     margin: 10px 0;
     padding: 10px;
     box-sizing: border-box;
@@ -209,7 +211,7 @@ input[type="text"] {
   }
 
 input[type="number"] {
-    width: 300%;
+    width: 35vw;
     margin: 10px 0;
     padding: 10px;
     box-sizing: border-box;
@@ -221,7 +223,7 @@ input[type="number"] {
   }
 
 textarea {
-    width: 300%;
+    width: 35vw;
     margin: 10px 0;
     padding: 10px;
     box-sizing: border-box;
@@ -257,3 +259,57 @@ textarea:focus {
     box-shadow: 2px 2px;
     transition: 0.5s ease-in-out;
 }
+
+@media screen and (max-width: 768px) {
+    .formContainer {
+        width: 80vw;
+        margin: 0 auto;
+        display: flex;
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px #ddd,
+                    -1px -1px 10px #ddd,
+                    1px -1px 10px #ddd,
+                    -1px 1px 10px #ddd;
+        padding: 20px;
+        box-sizing: border-box;
+        overflow: auto;
+        background: gray;
+      }
+
+      input[type="text"] {
+        width: 67vw;
+        margin: 5px 0;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 1px aquamarine;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+      }
+    
+    input[type="number"] {
+        width: 67vw;
+        margin: 5px 0;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 1px aquamarine;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+      }
+    
+    textarea {
+        width: 67vw;
+        margin: 0px;
+        margin-top: 5px;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 1px aquamarine;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+      }
+  }
