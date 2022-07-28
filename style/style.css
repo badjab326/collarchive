@@ -35,18 +35,18 @@ body {
     font-family: 'Arcade Interlaced';
     display: flex;
     justify-content: center;
-    font-size: 1.5vw;
+    font-size: 2vw;
     font-weight: lighter;
 }
 
 nav {
     display: flex;
     justify-content: center;
-    padding-bottom: 15px;
-    padding-top: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
     border-top: 2px solid aquamarine;
     border-bottom: 2px solid aquamarine;
-    margin-bottom: 30px;
+    margin-bottom: 2vh;
 }
 
 .navBar {
@@ -261,43 +261,36 @@ textarea:focus {
 }
 
 @media screen and (max-width: 768px) {
+    #indexTitle {
+        padding-top: 10px;
+        font-size: 8vw;
+    }
+
+    input[type="submit"] {
+        font-size: 2vh;
+        height: 3.3vh;
+    }
+
+    #showTitle {
+        margin: 10px;
+        font-size: 7vw;
+        max-width: 100%;
+    }
+
     .formContainer {
         width: 80vw;
-        margin: 0 auto;
-        display: flex;
-        border-radius: 10px;
-        box-shadow: 1px 1px 10px #ddd,
-                    -1px -1px 10px #ddd,
-                    1px -1px 10px #ddd,
-                    -1px 1px 10px #ddd;
-        padding: 20px;
-        box-sizing: border-box;
-        overflow: auto;
-        background: gray;
       }
 
       input[type="text"] {
         width: 67vw;
         margin: 5px 0;
         padding: 10px;
-        box-sizing: border-box;
-        border: 1px aquamarine;
-        border-radius: 5px;
-        display: flex;
-        justify-content: center;
-        align-content: center;
       }
     
     input[type="number"] {
         width: 67vw;
         margin: 5px 0;
         padding: 10px;
-        box-sizing: border-box;
-        border: 1px aquamarine;
-        border-radius: 5px;
-        display: flex;
-        justify-content: center;
-        align-content: center;
       }
     
     textarea {
@@ -305,11 +298,16 @@ textarea:focus {
         margin: 0px;
         margin-top: 5px;
         padding: 10px;
-        box-sizing: border-box;
-        border: 1px aquamarine;
-        border-radius: 5px;
-        display: flex;
-        justify-content: center;
-        align-content: center;
       }
+
+      #index {
+        padding: 5px;
+        margin: 5px;
+    }
+    
+    .indexImg {
+        max-width:50vw;
+        max-height: 20vh;
+        padding: 4.3px;
+    }
   }

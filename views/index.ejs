@@ -16,7 +16,7 @@
       </form>
 </nav>
 <ul id="index">
-    <% collections.sort().forEach(collection => { %>
+    <% collections.sort((a, b) => a.name.localeCompare(b.name)).forEach(collection => { %>
     <li>
         <a href="/collection/<%=collection._id; %>"> <img class="indexImg" src="<%= collection.img %>" title="<%= collection.name %>"> </a>
         <br/>
