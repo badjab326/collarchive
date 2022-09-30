@@ -20,13 +20,13 @@
     <div class="formContainer">
     <form action="/collection/<%= index %>?_method=PUT" method="POST">
         <label for="name">TITLE:</label>
-        <input type="text" name="name" placeholder="Game Title" value="<%= collection.name %>" />
+        <input type="text" name="name" placeholder="Game Title" value="<%= collection.name %>" required/>
         <br />
         <label for="img">IMAGE LINK:</label>
         <input type="text" name="img" placeholder="Link to Boxart Image" value="<%= collection.img %>"/>
         <br />
         <label for="platform">PLATFORM:</label>
-        <input type="text" name="platform" placeholder="Platform" value="<%= collection.platform %>"/>
+        <input type="text" name="platform" placeholder="Platform" value="<%= collection.platform %>" required/>
         <br />
         <label for="qty">QUANTITY OWNED:</label>
         <input type="number" name="qty" placeholder="Enter a Number" value="<%= collection.qty %>"/>
