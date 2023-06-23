@@ -1,9 +1,7 @@
 <h1>COLLARCHIVE</h1>
 <br />
 
-<h2>What is it?</h2>
-<br />
-Collarchive is a web based app that gives users the ability to digitally log a physical collection they own. The demo features items from my own personal collection!
+A web based app that gives users the ability to digitally log a physical collection they own. The demo features some items from my own personal collection!
 <br />
 
 <h2>Technologies Used</h2>
